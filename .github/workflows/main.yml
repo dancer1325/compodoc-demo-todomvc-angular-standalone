@@ -35,7 +35,7 @@ jobs:
             - name: Install Dependencies
               run: npm ci
             - name: Build doc
-              run: npm run doc
+              run: npm run compodoc:build
             - name: Archive www Artifact
               uses: actions/upload-artifact@master
               with:
@@ -54,7 +54,7 @@ jobs:
                   name: documentation
                   path: documentation
             - name: Deploy to github pages
-              uses: JamesIves/github-pages-deploy-action@3.6.2
+              uses: JamesIves/github-pages-deploy-action@4
               with:
                   GITHUB_TOKEN: ${{ secrets.COMPODOC_GITHUB_PAGES_TOKEN }}
                   BRANCH: gh-pages # The branch the action should deploy to.
