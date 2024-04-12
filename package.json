@@ -1,0 +1,37 @@
+{
+    "name": "compodoc-demo-todomvc-angular-standalone",
+    "version": "0.0.0",
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build",
+        "watch": "ng build --watch --configuration development",
+        "test": "ng test",
+        "compodoc:build": "compodoc -p tsconfig.doc.json",
+        "compodoc:build-and-serve": "compodoc -p tsconfig.doc.json -s",
+        "compodoc:serve": "compodoc -s"
+    },
+    "private": true,
+    "dependencies": {
+        "@angular/animations": "^17.3.0",
+        "@angular/common": "^17.3.0",
+        "@angular/compiler": "^17.3.0",
+        "@angular/core": "^17.3.0",
+        "@angular/forms": "^17.3.0",
+        "@angular/platform-browser": "^17.3.0",
+        "@angular/platform-browser-dynamic": "^17.3.0",
+        "@angular/router": "^17.3.0",
+        "rxjs": "~7.8.0",
+        "todomvc-app-css": "^2.4.3",
+        "todomvc-common": "^1.0.5",
+        "tslib": "^2.3.0",
+        "zone.js": "~0.14.3"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "^17.3.4",
+        "@angular/cli": "^17.3.4",
+        "@angular/compiler-cli": "^17.3.0",
+        "@compodoc/compodoc": "^1.1.23",
+        "typescript": "~5.4.2"
+    }
+}
